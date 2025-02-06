@@ -19,3 +19,17 @@ nano docker-compose.yml
 Run the docker compose in background
 
 docker-compose up -d
+
+Go browser and tape https:ip_address:port
+
+
+login Shuffle
+Username=admin & Password=admin
+
+Create new workflow and name it “Wazuh integration test”
+
+
+Create Workflow
+Inside the workflow we add Webhook, then we change the name of the webhook to “wazuh_alert” and change the name of the Shuffle tools to “response”
+
+
