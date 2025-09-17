@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ASSET_DATA_REPORT>
+    <HEADER>
+        <CREATION_DATE>2024-01-15T10:30:00Z</CREATION_DATE>
+        <MODIFICATION_DATE>2024-01-15T10:30:00Z</MODIFICATION_DATE>
+    </HEADER>
+    <HOST_LIST>
+        <HOST>
+            <IP>192.168.1.10</IP>
+            <TRACKING_METHOD>IP</TRACKING_METHOD>
+            <DNS>webserver01.example.com</DNS>
+            <NETBIOS>WEBSERVER01</NETBIOS>
+            <OS>Linux Ubuntu 20.04</OS>
+            <VULN_INFO_LIST>
+                <VULN_INFO>
+                    <QID>11827</QID>
+                    <TYPE>Vuln</TYPE>
+                    <SEVERITY>5</SEVERITY>
+                    <TITLE>Apache HTTP Server Multiple Vulnerabilities</TITLE>
+                    <CATEGORY>Web Server</CATEGORY>
+                    <LAST_SERVICE_MODIFICATION_DATETIME>2024-01-10T08:15:00Z</LAST_SERVICE_MODIFICATION_DATETIME>
+                    <PUBLISHED_DATETIME>2023-12-15T00:00:00Z</PUBLISHED_DATETIME>
+                    <CVE_ID_LIST>
+                        <CVE_ID>CVE-2023-45802</CVE_ID>
+                        <CVE_ID>CVE-2023-43622</CVE_ID>
+                    </CVE_ID_LIST>
+                    <CVSS_SCORE>9.8</CVSS_SCORE>
+                    <CVSS3_SCORE>9.8</CVSS3_SCORE>
+                    <PORT>80</PORT>
+                    <PROTOCOL>tcp</PROTOCOL>
+                    <RESULT>
+                        Apache/2.4.41 Server detected. Multiple critical vulnerabilities found in this version.
+                        Vulnerable to remote code execution and denial of service attacks.
+                    </RESULT>
+                    <SOLUTION>
+                        Upgrade Apache HTTP Server to version 2.4.58 or later. 
+                        Apply security patches and restart the service.
+                    </SOLUTION>
+                </VULN_INFO>
+                <VULN_INFO>
+                    <QID>38173</QID>
+                    <TYPE>Vuln</TYPE>
+                    <SEVERITY>4</SEVERITY>
+                    <TITLE>SSL Certificate Signed Using Weak Hashing Algorithm</TITLE>
+                    <CATEGORY>SSL</CATEGORY>
+                    <LAST_SERVICE_MODIFICATION_DATETIME>2024-01-10T08:15:00Z</LAST_SERVICE_MODIFICATION_DATETIME>
+                    <PUBLISHED_DATETIME>2023-11-20T00:00:00Z</PUBLISHED_DATETIME>
+                    <CVSS_SCORE>7.5</CVSS_SCORE>
+                    <CVSS3_SCORE>7.5</CVSS3_SCORE>
+                    <PORT>443</PORT>
+                    <PROTOCOL>tcp</PROTOCOL>
+                    <RESULT>
+                        SSL certificate is signed using SHA-1 algorithm which is considered weak.
+                        Certificate expires on 2024-06-15.
+                    </RESULT>
+                    <SOLUTION>
+                        Replace the SSL certificate with one signed using SHA-256 or stronger algorithm.
+                    </SOLUTION>
+                </VULN_INFO>
+                <VULN_INFO>
+                    <QID>82023</QID>
+                    <TYPE>Vuln</TYPE>
+                    <SEVERITY>3</SEVERITY>
+                    <TITLE>SSH Weak Encryption Algorithms Enabled</TITLE>
+                    <CATEGORY>General Remote Services</CATEGORY>
+                    <LAST_SERVICE_MODIFICATION_DATETIME>2024-01-10T08:15:00Z</LAST_SERVICE_MODIFICATION_DATETIME>
+                    <PUBLISHED_DATETIME>2023-10-05T00:00:00Z</PUBLISHED_DATETIME>
+                    <CVE_ID_LIST>
+                        <CVE_ID>CVE-2023-38408</CVE_ID>
+                    </CVE_ID_LIST>
+                    <CVSS_SCORE>5.3</CVSS_SCORE>
+                    <CVSS3_SCORE>5.3</CVSS3_SCORE>
+                    <PORT>22</PORT>
+                    <PROTOCOL>tcp</PROTOCOL>
+                    <RESULT>
+                        SSH server supports weak encryption algorithms: 3des-cbc, aes128-cbc
+                    </RESULT>
+                    <SOLUTION>
+                        Configure SSH to disable weak encryption algorithms. Update sshd_config file.
+                    </SOLUTION>
+                </VULN_INFO>
+            </VULN_INFO_LIST>
+        </HOST>
+        <HOST>
+            <IP>192.168.1.20</IP>
+            <TRACKING_METHOD>IP</TRACKING_METHOD>
+            <DNS>dbserver01.example.com</DNS>
+            <NETBIOS>DBSERVER01</NETBIOS>
+            <OS>Windows Server 2019</OS>
+            <VULN_INFO_LIST>
+                <VULN_INFO>
+                    <QID>91541</QID>
+                    <TYPE>Vuln</TYPE>
+                    <SEVERITY>5</SEVERITY>
+                    <TITLE>Microsoft SQL Server Multiple Vulnerabilities</TITLE>
+                    <CATEGORY>Database</CATEGORY>
+                    <LAST_SERVICE_MODIFICATION_DATETIME>2024-01-12T10:30:00Z</LAST_SERVICE_MODIFICATION_DATETIME>
+                    <PUBLISHED_DATETIME>2024-01-08T00:00:00Z</PUBLISHED_DATETIME>
+                    <CVE_ID_LIST>
+                        <CVE_ID>CVE-2024-0056</CVE_ID>
+                        <CVE_ID>CVE-2024-0057</CVE_ID>
+                    </CVE_ID_LIST>
+                    <CVSS_SCORE>9.9</CVSS_SCORE>
+                    <CVSS3_SCORE>9.9</CVSS3_SCORE>
+                    <PORT>1433</PORT>
+                    <PROTOCOL>tcp</PROTOCOL>
+                    <RESULT>
+                        SQL Server 2019 CU22 detected. Multiple critical vulnerabilities allow remote code execution.
+                    </RESULT>
+                    <SOLUTION>
+                        Apply SQL Server 2019 CU25 or later. Install latest security updates.
+                    </SOLUTION>
+                </VULN_INFO>
+                <VULN_INFO>
+                    <QID>45038</QID>
+                    <TYPE>Vuln</TYPE>
+                    <SEVERITY>4</SEVERITY>
+                    <TITLE>Windows SMB Signing Not Required</TITLE>
+                    <CATEGORY>Windows</CATEGORY>
+                    <LAST_SERVICE_MODIFICATION_DATETIME>2024-01-12T10:30:00Z</LAST_SERVICE_MODIFICATION_DATETIME>
+                    <PUBLISHED_DATETIME>2023-09-20T00:00:00Z</PUBLISHED_DATETIME>
+                    <CVSS_SCORE>6.8</CVSS_SCORE>
+                    <CVSS3_SCORE>6.8</CVSS3_SCORE>
+                    <PORT>445</PORT>
+                    <PROTOCOL>tcp</PROTOCOL>
+                    <RESULT>
+                        SMB signing is not required, allowing potential man-in-the-middle attacks.
+                    </RESULT>
+                    <SOLUTION>
+                        Enable SMB signing requirement in Group Policy or registry settings.
+                    </SOLUTION>
+                </VULN_INFO>
+                <VULN_INFO>
+                    <QID>70657</QID>
+                    <TYPE>Vuln</TYPE>
+                    <SEVERITY>2</SEVERITY>
+                    <TITLE>Windows RDP Security Layer Not Set to SSL</TITLE>
+                    <CATEGORY>Windows</CATEGORY>
+                    <LAST_SERVICE_MODIFICATION_DATETIME>2024-01-12T10:30:00Z</LAST_SERVICE_MODIFICATION_DATETIME>
+                    <PUBLISHED_DATETIME>2023-08-15T00:00:00Z</PUBLISHED_DATETIME>
+                    <CVSS_SCORE>3.7</CVSS_SCORE>
+                    <CVSS3_SCORE>3.7</CVSS3_SCORE>
+                    <PORT>3389</PORT>
+                    <PROTOCOL>tcp</PROTOCOL>
+                    <RESULT>
+                        RDP is configured to use RDP security layer instead of SSL/TLS.
+                    </RESULT>
+                    <SOLUTION>
+                        Configure RDP to use SSL/TLS encryption for enhanced security.
+                    </SOLUTION>
+                </VULN_INFO>
+            </VULN_INFO_LIST>
+        </HOST>
+        <HOST>
+            <IP>192.168.1.30</IP>
+            <TRACKING_METHOD>IP</TRACKING_METHOD>
+            <DNS>fileserver01.example.com</DNS>
+            <NETBIOS>FILESERVER01</NETBIOS>
+            <OS>Linux CentOS 8</OS>
+            <VULN_INFO_LIST>
+                <VULN_INFO>
+                    <QID>87151</QID>
+                    <TYPE>Vuln</TYPE>
+                    <SEVERITY>4</SEVERITY>
+                    <TITLE>Samba Remote Code Execution Vulnerability</TITLE>
+                    <CATEGORY>General Remote Services</CATEGORY>
+                    <LAST_SERVICE_MODIFICATION_DATETIME>2024-01-08T14:20:00Z</LAST_SERVICE_MODIFICATION_DATETIME>
+                    <PUBLISHED_DATETIME>2023-12-01T00:00:00Z</PUBLISHED_DATETIME>
+                    <CVE_ID_LIST>
+                        <CVE_ID>CVE-2023-4091</CVE_ID>
+                    </CVE_ID_LIST>
+                    <CVSS_SCORE>8.1</CVSS_SCORE>
+                    <CVSS3_SCORE>8.1</CVSS3_SCORE>
+                    <PORT>139</PORT>
+                    <PROTOCOL>tcp</PROTOCOL>
+                    <RESULT>
+                        Samba 4.17.5 detected. Vulnerable to remote code execution via crafted packets.
+                    </RESULT>
+                    <SOLUTION>
+                        Upgrade Samba to version 4.18.8 or later. Apply available security patches.
+                    </SOLUTION>
+                </VULN_INFO>
+                <VULN_INFO>
+                    <QID>11219</QID>
+                    <TYPE>Vuln</TYPE>
+                    <SEVERITY>3</SEVERITY>
+                    <TITLE>NFS Exported Share Information Disclosure</TITLE>
+                    <CATEGORY>General Remote Services</CATEGORY>
+                    <LAST_SERVICE_MODIFICATION_DATETIME>2024-01-08T14:20:00Z</LAST_SERVICE_MODIFICATION_DATETIME>
+                    <PUBLISHED_DATETIME>2023-07-10T00:00:00Z</PUBLISHED_DATETIME>
+                    <CVSS_SCORE>5.0</CVSS_SCORE>
+                    <CVSS3_SCORE>5.0</CVSS3_SCORE>
+                    <PORT>2049</PORT>
+                    <PROTOCOL>tcp</PROTOCOL>
+                    <RESULT>
+                        NFS shares are exported with world-readable permissions: /home, /data
+                    </RESULT>
+                    <SOLUTION>
+                        Restrict NFS share permissions and implement proper access controls.
+                    </SOLUTION>
+                </VULN_INFO>
+            </VULN_INFO_LIST>
+        </HOST>
+    </HOST_LIST>
+</ASSET_DATA_REPORT>
